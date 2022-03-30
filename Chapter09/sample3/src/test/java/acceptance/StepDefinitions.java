@@ -45,7 +45,7 @@ public class StepDefinitions {
     }
 
     @When("^the calculator divides them$")
-    public void the_calculator_sums_them() throws Throwable {
+    public void the_calculator_divides_them() throws Throwable {
         String url = String.format("%s/div?a=%s&b=%s", server, c, d);
         result = restTemplate.getForObject(url, String.class);
     }
